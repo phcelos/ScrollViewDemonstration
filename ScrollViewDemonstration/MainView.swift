@@ -14,10 +14,11 @@ class MainView: UIView {
         return view
     }()
     
-    private let contentView: UIView = {
-        let view = UIView()
+    private let stackView: UIStackView = {
+        let view = UIStackView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .red
+        view.backgroundColor = .purple
+        view.axis = .vertical
         return view
     }()
     
@@ -28,7 +29,7 @@ class MainView: UIView {
         view.font = UIFont.preferredFont(forTextStyle: .largeTitle)
         view.numberOfLines = 0
         view.textAlignment = .center
-        view.text = NumbersTextGenerator.generateNumbersText(until: 10)
+        view.text = NumbersTextGenerator.generateNumbersText(until: 15)
         return view
     }()
     
@@ -39,7 +40,7 @@ class MainView: UIView {
         view.font = UIFont.preferredFont(forTextStyle: .largeTitle)
         view.numberOfLines = 0
         view.textAlignment = .center
-        view.text = NumbersTextGenerator.generateNumbersText(until: 15)
+        view.text = NumbersTextGenerator.generateNumbersText(until: 20)
         return view
     }()
     
@@ -58,8 +59,10 @@ class MainView: UIView {
     
     private func setupViewHierarchy() {
         addSubview(scrollView)
-        scrollView.addSubview(numbersLabel1)
-        scrollView.addSubview(numbersLabel2)
+        scrollView.addSubview(stackView)
+        
+        stackView.addArrangedSubview(numbersLabel1)
+        stackView.addArrangedSubview(numbersLabel2)
     }
     
     private func setupConstraints() {
@@ -72,14 +75,9 @@ class MainView: UIView {
          
          If you do not set the contentView's width, doesn't matter if you had setup leading and trailing constraints, the contentView won't be centtered and won't have the correct size.
          */
-        numbersLabel1.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
-        numbersLabel1.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
-        numbersLabel1.bottomAnchor.constraint(equalTo: numbersLabel2.topAnchor).isActive = true
-        numbersLabel1.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor).isActive = true
-        
-        numbersLabel2.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
-        numbersLabel2.topAnchor.constraint(equalTo: numbersLabel1.bottomAnchor).isActive = true
-        numbersLabel2.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
-        numbersLabel2.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor).isActive = true
+        stackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
+        stackView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor).isActive = true
+        stackView.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
+        stackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
     }
 }

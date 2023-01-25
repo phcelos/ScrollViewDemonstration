@@ -10,7 +10,6 @@
 		CD77A1A12981C0DE0080C1BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77A1A02981C0DE0080C1BB /* AppDelegate.swift */; };
 		CD77A1A32981C0DE0080C1BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77A1A22981C0DE0080C1BB /* SceneDelegate.swift */; };
 		CD77A1A52981C0DE0080C1BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77A1A42981C0DE0080C1BB /* ViewController.swift */; };
-		CD77A1A82981C0DE0080C1BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD77A1A62981C0DE0080C1BB /* Main.storyboard */; };
 		CD77A1AA2981C0E30080C1BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD77A1A92981C0E30080C1BB /* Assets.xcassets */; };
 		CD77A1AD2981C0E30080C1BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD77A1AB2981C0E30080C1BB /* LaunchScreen.storyboard */; };
 		CD77A1B82981C0E30080C1BB /* ScrollViewDemonstrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77A1B72981C0E30080C1BB /* ScrollViewDemonstrationTests.swift */; };
@@ -24,13 +23,6 @@
 			remoteGlobalIDString = CD77A19C2981C0DE0080C1BB;
 			remoteInfo = ScrollViewDemonstration;
 		};
-		CD77A1BE2981C0E30080C1BB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CD77A1952981C0DE0080C1BB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CD77A19C2981C0DE0080C1BB;
-			remoteInfo = ScrollViewDemonstration;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -38,13 +30,11 @@
 		CD77A1A02981C0DE0080C1BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD77A1A22981C0DE0080C1BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CD77A1A42981C0DE0080C1BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CD77A1A72981C0DE0080C1BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD77A1A92981C0E30080C1BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD77A1AC2981C0E30080C1BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD77A1AE2981C0E30080C1BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD77A1B32981C0E30080C1BB /* ScrollViewDemonstrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollViewDemonstrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD77A1B72981C0E30080C1BB /* ScrollViewDemonstrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewDemonstrationTests.swift; sourceTree = "<group>"; };
-		CD77A1BD2981C0E30080C1BB /* ScrollViewDemonstrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollViewDemonstrationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +46,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CD77A1B02981C0E30080C1BB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CD77A1BA2981C0E30080C1BB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -86,7 +69,6 @@
 			children = (
 				CD77A19D2981C0DE0080C1BB /* ScrollViewDemonstration.app */,
 				CD77A1B32981C0E30080C1BB /* ScrollViewDemonstrationTests.xctest */,
-				CD77A1BD2981C0E30080C1BB /* ScrollViewDemonstrationUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,7 +79,6 @@
 				CD77A1A02981C0DE0080C1BB /* AppDelegate.swift */,
 				CD77A1A22981C0DE0080C1BB /* SceneDelegate.swift */,
 				CD77A1A42981C0DE0080C1BB /* ViewController.swift */,
-				CD77A1A62981C0DE0080C1BB /* Main.storyboard */,
 				CD77A1A92981C0E30080C1BB /* Assets.xcassets */,
 				CD77A1AB2981C0E30080C1BB /* LaunchScreen.storyboard */,
 				CD77A1AE2981C0E30080C1BB /* Info.plist */,
@@ -151,24 +132,6 @@
 			productReference = CD77A1B32981C0E30080C1BB /* ScrollViewDemonstrationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CD77A1BC2981C0E30080C1BB /* ScrollViewDemonstrationUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CD77A1CD2981C0E30080C1BB /* Build configuration list for PBXNativeTarget "ScrollViewDemonstrationUITests" */;
-			buildPhases = (
-				CD77A1B92981C0E30080C1BB /* Sources */,
-				CD77A1BA2981C0E30080C1BB /* Frameworks */,
-				CD77A1BB2981C0E30080C1BB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CD77A1BF2981C0E30080C1BB /* PBXTargetDependency */,
-			);
-			name = ScrollViewDemonstrationUITests;
-			productName = ScrollViewDemonstrationUITests;
-			productReference = CD77A1BD2981C0E30080C1BB /* ScrollViewDemonstrationUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -183,10 +146,6 @@
 						CreatedOnToolsVersion = 13.2.1;
 					};
 					CD77A1B22981C0E30080C1BB = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = CD77A19C2981C0DE0080C1BB;
-					};
-					CD77A1BC2981C0E30080C1BB = {
 						CreatedOnToolsVersion = 13.2.1;
 						TestTargetID = CD77A19C2981C0DE0080C1BB;
 					};
@@ -207,7 +166,6 @@
 			targets = (
 				CD77A19C2981C0DE0080C1BB /* ScrollViewDemonstration */,
 				CD77A1B22981C0E30080C1BB /* ScrollViewDemonstrationTests */,
-				CD77A1BC2981C0E30080C1BB /* ScrollViewDemonstrationUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -219,18 +177,10 @@
 			files = (
 				CD77A1AD2981C0E30080C1BB /* LaunchScreen.storyboard in Resources */,
 				CD77A1AA2981C0E30080C1BB /* Assets.xcassets in Resources */,
-				CD77A1A82981C0DE0080C1BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CD77A1B12981C0E30080C1BB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CD77A1BB2981C0E30080C1BB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,13 +208,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD77A1B92981C0E30080C1BB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -273,22 +216,9 @@
 			target = CD77A19C2981C0DE0080C1BB /* ScrollViewDemonstration */;
 			targetProxy = CD77A1B42981C0E30080C1BB /* PBXContainerItemProxy */;
 		};
-		CD77A1BF2981C0E30080C1BB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CD77A19C2981C0DE0080C1BB /* ScrollViewDemonstration */;
-			targetProxy = CD77A1BE2981C0E30080C1BB /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CD77A1A62981C0DE0080C1BB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CD77A1A72981C0DE0080C1BB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CD77A1AB2981C0E30080C1BB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -427,7 +357,6 @@
 				INFOPLIST_FILE = ScrollViewDemonstration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -454,7 +383,6 @@
 				INFOPLIST_FILE = ScrollViewDemonstration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -508,40 +436,6 @@
 			};
 			name = Release;
 		};
-		CD77A1CE2981C0E30080C1BB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.phcelos.ScrollViewDemonstrationUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ScrollViewDemonstration;
-			};
-			name = Debug;
-		};
-		CD77A1CF2981C0E30080C1BB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.phcelos.ScrollViewDemonstrationUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ScrollViewDemonstration;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -568,15 +462,6 @@
 			buildConfigurations = (
 				CD77A1CB2981C0E30080C1BB /* Debug */,
 				CD77A1CC2981C0E30080C1BB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CD77A1CD2981C0E30080C1BB /* Build configuration list for PBXNativeTarget "ScrollViewDemonstrationUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CD77A1CE2981C0E30080C1BB /* Debug */,
-				CD77A1CF2981C0E30080C1BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

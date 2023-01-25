@@ -14,6 +14,7 @@
 		CD77A1AD2981C0E30080C1BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD77A1AB2981C0E30080C1BB /* LaunchScreen.storyboard */; };
 		CD77A1B82981C0E30080C1BB /* ScrollViewDemonstrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77A1B72981C0E30080C1BB /* ScrollViewDemonstrationTests.swift */; };
 		CD77A1D12981C8CC0080C1BB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77A1D02981C8CC0080C1BB /* MainView.swift */; };
+		CD77A1D32981E0C00080C1BB /* NumbersTextGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77A1D22981E0C00080C1BB /* NumbersTextGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		CD77A1B32981C0E30080C1BB /* ScrollViewDemonstrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollViewDemonstrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD77A1B72981C0E30080C1BB /* ScrollViewDemonstrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewDemonstrationTests.swift; sourceTree = "<group>"; };
 		CD77A1D02981C8CC0080C1BB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		CD77A1D22981E0C00080C1BB /* NumbersTextGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersTextGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		CD77A19F2981C0DE0080C1BB /* ScrollViewDemonstration */ = {
 			isa = PBXGroup;
 			children = (
+				CD77A1D42981E0D60080C1BB /* Helpers */,
 				CD77A1A02981C0DE0080C1BB /* AppDelegate.swift */,
 				CD77A1A22981C0DE0080C1BB /* SceneDelegate.swift */,
 				CD77A1D02981C8CC0080C1BB /* MainView.swift */,
@@ -95,6 +98,14 @@
 				CD77A1B72981C0E30080C1BB /* ScrollViewDemonstrationTests.swift */,
 			);
 			path = ScrollViewDemonstrationTests;
+			sourceTree = "<group>";
+		};
+		CD77A1D42981E0D60080C1BB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CD77A1D22981E0C00080C1BB /* NumbersTextGenerator.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +210,7 @@
 			files = (
 				CD77A1A52981C0DE0080C1BB /* ViewController.swift in Sources */,
 				CD77A1D12981C8CC0080C1BB /* MainView.swift in Sources */,
+				CD77A1D32981E0C00080C1BB /* NumbersTextGenerator.swift in Sources */,
 				CD77A1A12981C0DE0080C1BB /* AppDelegate.swift in Sources */,
 				CD77A1A32981C0DE0080C1BB /* SceneDelegate.swift in Sources */,
 			);

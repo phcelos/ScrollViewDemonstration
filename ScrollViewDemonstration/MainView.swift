@@ -25,6 +25,7 @@ class MainView: UIView {
         let view = UILabel()
         view.backgroundColor = .blue
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.font = UIFont.preferredFont(forTextStyle: .largeTitle)
         view.numberOfLines = 0
         view.textAlignment = .center
         view.text = (1...1000).reduce("", { partialResult, nextNumber in

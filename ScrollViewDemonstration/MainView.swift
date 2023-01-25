@@ -17,6 +17,19 @@ class MainView: UIView {
     private let contentView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .red
+        return view
+    }()
+    
+    private let textLabel: UILabel = {
+        let view = UILabel()
+        view.backgroundColor = .blue
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.numberOfLines = 0
+        view.textAlignment = .center
+        view.text = (1...1000).reduce("", { partialResult, nextNumber in
+            partialResult + String(nextNumber) + "\n"
+        })
         return view
     }()
     
@@ -36,6 +49,7 @@ class MainView: UIView {
     private func setupViewHierarchy() {
         addSubview(scrollView)
         scrollView.addSubview(contentView)
+        contentView.addSubview(textLabel)
     }
     
     private func setupConstraints() {
@@ -43,10 +57,19 @@ class MainView: UIView {
         scrollView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         scrollView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         scrollView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-        
-        contentView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
-        contentView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
+        /**
+         This line is the key.
+         
+         If you do not set the contentView's width, doesn't matter if you had setup leading and trailing constraints, the contentView won't be centtered and won't have the correct size.
+         */
+        contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
         contentView.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
         contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
+        contentView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor).isActive = true
+        
+        textLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
+        textLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
+        textLabel.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
+        textLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
     }
 }

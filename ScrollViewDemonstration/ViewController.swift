@@ -26,10 +26,11 @@ class ViewController: UIViewController {
     }
     
     private func setupConstraints() {
-        mainVew.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        mainVew.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        mainVew.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        mainVew.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        let safeArea = view.safeAreaLayoutGuide
+        mainVew.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor).isActive = true
+        mainVew.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor).isActive = true
+        mainVew.topAnchor.constraint(equalTo: safeArea.topAnchor).isActive = true
+        mainVew.bottomAnchor.constraint(equalTo: safeArea.bottomAnchor).isActive = true
     }
 }
 

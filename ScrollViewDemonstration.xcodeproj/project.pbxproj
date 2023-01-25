@@ -13,6 +13,7 @@
 		CD77A1AA2981C0E30080C1BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD77A1A92981C0E30080C1BB /* Assets.xcassets */; };
 		CD77A1AD2981C0E30080C1BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD77A1AB2981C0E30080C1BB /* LaunchScreen.storyboard */; };
 		CD77A1B82981C0E30080C1BB /* ScrollViewDemonstrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77A1B72981C0E30080C1BB /* ScrollViewDemonstrationTests.swift */; };
+		CD77A1D12981C8CC0080C1BB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77A1D02981C8CC0080C1BB /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		CD77A1AE2981C0E30080C1BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD77A1B32981C0E30080C1BB /* ScrollViewDemonstrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollViewDemonstrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD77A1B72981C0E30080C1BB /* ScrollViewDemonstrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewDemonstrationTests.swift; sourceTree = "<group>"; };
+		CD77A1D02981C8CC0080C1BB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			children = (
 				CD77A1A02981C0DE0080C1BB /* AppDelegate.swift */,
 				CD77A1A22981C0DE0080C1BB /* SceneDelegate.swift */,
+				CD77A1D02981C8CC0080C1BB /* MainView.swift */,
 				CD77A1A42981C0DE0080C1BB /* ViewController.swift */,
 				CD77A1A92981C0E30080C1BB /* Assets.xcassets */,
 				CD77A1AB2981C0E30080C1BB /* LaunchScreen.storyboard */,
@@ -195,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD77A1A52981C0DE0080C1BB /* ViewController.swift in Sources */,
+				CD77A1D12981C8CC0080C1BB /* MainView.swift in Sources */,
 				CD77A1A12981C0DE0080C1BB /* AppDelegate.swift in Sources */,
 				CD77A1A32981C0DE0080C1BB /* SceneDelegate.swift in Sources */,
 			);
